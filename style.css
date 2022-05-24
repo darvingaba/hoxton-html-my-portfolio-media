@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-scroll-behavior: auto !important;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-auto-flow: row;
+    /* background-color: #68082b; */
+    background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-repeat: no-repeat;
+    /* background-size: 200%; */
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* header and nav */
+header{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1rem 3rem;
+    padding: 1rem;
+    align-items: center;
+    background-color: #00090e5e;
+    border-radius: 12px;
+}
+header .logo{
+    margin-left: 2rem;
+    color: antiquewhite;
+}
+header ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+header a{
+    border-radius: 20px;
+    padding: 1.6rem;
+    transition: all .4s ease-in-out;
+}
+header a:hover{
+    color: #d3ff35;
+}
+header .nav-logo{
+    width: 1.2rem;
+}
+
+/* socials */
+
+.socials{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    font-size: 28px;
+    gap: 1rem;
+}
+.socials svg{
+    height: 28px;
+    width: 28px;
+}
+
+/* introduction part */
+
+main{
+    display: grid;
+    place-items:center;
+    background-image: url(/img/blob-haikei.svg);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    margin: 4rem 0rem 0rem 0rem;
+    border-radius: 12px;
+}
+main .introduction{
+    display: grid;
+    place-items: center;
+    /* gap: 4rem; */
+    grid-auto-flow: column;
+}
+main .paragraph{
+    display: grid;
+    /* gap: 2rem; */
+}
+main p{
+    place-items: center;
+}
+main h1{
+    color: rgb(208, 255, 0);
+}
+main span{
+    color: aqua;
+}
+
+/* projects section */
+
+.projects-section{
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    background-color: #beb7b7;
+    padding: 2rem 6rem;
+    gap: 1rem;
+}
+.projects-section h2{
+    color: rgba(0, 0, 0, 0.563);
+}
+.projects{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+.project1, .project2,.project3{
+    border: 1px solid rgba(0, 0, 0, 0.378);
+    padding: 10px 20px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.projects p{
+    font-size: 25px;
+    color: #cf556c;
+}
+.projects a{
+    color: #cf556c;
+}
+.projects img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+/* experience */
+.experience{
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    gap: 0.5rem;
+    padding: 2rem 0px;
+    background-color: rgba(0, 255, 255, 0.596);
+    background-size: 100%;
+}
+.experience h2{
+    color: rgba(0, 0, 0, 0.563);
+}
+.exp{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    place-items: center;
+    color: rgba(0, 0, 0, 0.824);
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    padding: 1rem 4rem;
+}
+.experience .labels{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 3.2rem;
+    padding: 1rem 2rem;
+}
+/* skills */
+.skills{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+    padding: 1rem;
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+.skills h2{
+    color: rgba(0, 0, 0, 0.563);
+}
+.skills-list{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+.js , .react, .html, .css {
+    display: grid;
+    place-items: center;
+    gap: 0.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.429);
+    padding: 1rem 3rem;
+    border-radius: 22px;
+}
+
+/* back to top */
+.back-to-top{
+    display: grid;
+    place-items: center;
+    padding: 1rem ;
+    background-color: rgba(0, 0, 0, 0.413);
+}
+
+@media screen and (max-width:652px) {
+    header{
+    padding: 0.4rem 0rem;
+    }
+    .projects-section{
+    padding: 1rem 2rem;
+    gap: 1rem;
+    }
+}
+@media screen and (max-width:320px) {
+    header{
+    padding: 0.4rem 0rem;
+    }
+    .projects-section{
+    padding: 0rem 0rem;
+    gap: 0rem;
+    }
+}
